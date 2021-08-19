@@ -1,8 +1,18 @@
 import '../style.css';
-const Display = () => {
+import React, { useState } from 'react';
+
+
+
+const Display = (props) => {
+
+        var [numero, setNumero] = useState('oi');
+
+        function atualiza (){
+            setNumero(numero => props.valor)
+        }
     return (
         <div className='display'>
-            display
+            {numero}
         </div>
     );
 };
