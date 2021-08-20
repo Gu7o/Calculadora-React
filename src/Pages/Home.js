@@ -36,7 +36,7 @@ condicionais ou nested functions*/
         }
         if (estado== 'resultado'){
             console.log('o resultado e'+ resultado);
-            return resultado.toFixed(5);
+            return resultado;
            
         }
         if (estado =='Display'){
@@ -118,6 +118,7 @@ function igual (){
             break;
         case 'divisao':
             resultado= op1/op2;
+            resultado=resultado.toFixed(3);
             mostrarNumero();
             break;       
     }
