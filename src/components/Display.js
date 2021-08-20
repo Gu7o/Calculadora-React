@@ -8,11 +8,10 @@ const Display = (props) => {
         var [numero, setNumero] = useState('oi');
 
         function atualiza (){
-            setNumero(numero => props.valor)
+            setNumero(props.valor)
         }
     return (
         <div className='display'>
-            {numero}
         </div>
     );
 };
